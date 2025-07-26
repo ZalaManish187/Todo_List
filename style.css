@@ -1,0 +1,79 @@
+ *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+        
+        #main{
+           margin-top: 100px;
+           background-color: cadetblue;
+           border-radius: 20px;
+           object-fit: cover;
+           padding:50px;
+           width:600px;
+        }
+        
+        input{
+            width:50vh;
+            height:50px;
+            color:black;
+            border:none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        input:active{
+            transform: scale(0.96);
+             border:none;
+        }
+        input::placeholder{
+            padding-left: 10px;
+        
+        }
+         input:focus::placeholder{
+           color:transparent;
+        
+        }
+       
+        button{
+            height:50px;
+            width:10vh;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            color:#fff;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        button:active{
+            background-color:black;
+            transform:scale(0.95);
+        }
+        #outputShow{
+            margin-top: 30px;
+            font-size: 18px;
+           display: flex;
+           gap:2vh;
+           flex-direction: column;
+           
+            
+        }
+        
+        span{
+            color:rgb(255, 255, 255);
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 50vh;
+             height:30px;
+            width:50vh;
+            background-color: red;
+            
+        }
+        #output i{
+        font-size: 20px;
+
+        }
+       
