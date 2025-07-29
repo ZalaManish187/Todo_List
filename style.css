@@ -1,82 +1,136 @@
- *{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 
-        }
-        
-        #main{
-           margin-top: 100px;
-           background-color: cadetblue;
-           border-radius: 20px;
-           object-fit: cover;
-           padding:50px;
-           width:600px;
-        }
-        
-        input{
-            width:50vh;
-            height:50px;
-            color:black;
-            border:none;
-            outline: none;
-            border-radius: 5px;
-            font-size: 20px;
-            padding-left: 10px;
-        }
-        input:active{
-            transform: scale(0.96);
-             border:none;
-        }
-        input::placeholder{
-            padding-left: 10px;
-        
-        }
-         input:focus::placeholder{
-           color:transparent;
-        
-        }
-       
-        button{
-            height:50px;
-            width:10vh;
-            background-color: red;
-            border: none;
-            border-radius: 5px;
-            color:#fff;
-            font-size: 18px;
-            transition: background 0.3s ease;
-        }
-        button:active{
-            background-color:black;
-            transform:scale(0.95);
-        }
-        #outputShow{
-            margin-top: 30px;
-            font-size: 18px;
-           display: flex;
-           gap:2vh;
-           flex-direction: column;
-           
-            
-        }
-        
-       span{
-            color:rgb(0, 0, 0);
-            font-size: 20px;
-            padding : 10px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            gap: 50vh;
-             height:30px;
-            width:50vh;
-            background-color: rgb(255, 255, 255);
-            transform: scale(0.94);
-            
-        }
-        #output i{
-        font-size: 20px;
+ }
 
-        }
-       
+ #main {
+     width: 34rem;
+ }
+
+
+
+ input {
+
+     color: black;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     font-size: 20px;
+
+ }
+
+ input:active {
+     transform: scale(0.95);
+     border: none;
+ }
+
+ input::placeholder {
+     padding-left: 10px;
+
+ }
+
+ input:focus::placeholder {
+     color: transparent;
+
+ }
+
+ button {
+     height: 50px;
+     width: 10vh;
+     background-color: red;
+     border: none;
+     border-radius: 5px;
+     color: #fff;
+     font-size: 18px;
+     transition: background 0.3s ease;
+ }
+
+ button:active {
+     background-color: black;
+     transform: scale(0.95);
+ }
+
+ span {
+     position: relative;
+     background: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+     width: 50vh;
+     padding: 12px 40px 12px 12px;
+     margin-top: 15px;
+     border-radius: 10px;
+     font-size: 16px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     cursor: pointer;
+ }
+
+ i {
+     font-size: 25px;
+     color: rgb(45, 42, 42);
+     position: absolute;
+     right: 0;
+     align-items: center;
+     margin-right: 10px;
+}
+i:hover{
+    color: chocolate;
+}
+i:active{
+    color:#000000;
+    transform: scale(0.95);
+}
+
+ @media(max-width:480px) {
+     input {
+         font-size: 16px;
+         width: 100%;
+
+     }
+
+     #main {
+         width: 100%;
+
+     }
+
+
+     span {
+         width: 100%;
+         font-size: 14px;
+        
+     }
+
+     i {
+         color: #000000;
+     }
+
+
+ }
+
+
+ @media (max-width: 768px) and (min-width:481px) {
+     input {
+         font-size: 16px;
+         width: 80%;
+     }
+
+    
+
+
+
+ }
+
+ @media (min-width:769px) {
+     input {
+
+         width: 100%;
+     }
+
+     span {
+         width:100%;
+
+     }
+
+ }
