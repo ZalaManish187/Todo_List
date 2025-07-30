@@ -7,20 +7,8 @@
 
  #main {
      width: 34rem;
+     background-color:forestgreen ;
  }
-
-
-
- input {
-
-     color: black;
-     border: none;
-     outline: none;
-     border-radius: 5px;
-     font-size: 20px;
-
- }
-
  input:active {
      transform: scale(0.95);
      border: none;
@@ -28,12 +16,14 @@
 
  input::placeholder {
      padding-left: 10px;
-
- }
+}
 
  input:focus::placeholder {
      color: transparent;
 
+ }
+ input{
+    width: 100%;
  }
 
  button {
@@ -56,7 +46,7 @@
      position: relative;
      background: rgb(255, 255, 255);
      color: rgb(0, 0, 0);
-     width: 50vh;
+     max-width: 420px;
      padding: 12px 40px 12px 12px;
      margin-top: 15px;
      border-radius: 10px;
@@ -91,18 +81,16 @@ i:active{
      }
 
      #main {
-         width: 100%;
-        margin-left: 15px;
-        margin-right: 15px;
+        max-width: 360px;
+         
 
+     }
+     span{
+        width: 100%;
      }
 
 
-     span {
-         width: 100%;
-         font-size: 14px;
-        
-     }
+
 
      i {
          color: #000000;
@@ -115,8 +103,11 @@ i:active{
  @media (max-width: 768px) and (min-width:481px) {
      input {
          font-size: 16px;
-         width: 80%;
+        width: 100%;
      }
+    span{
+        width: 100%;
+    }
 
     
 
@@ -129,10 +120,8 @@ i:active{
 
          width: 100%;
      }
-
-     span {
-         width:80%;
-
+     span{
+        width: 100%;
      }
 
  }
