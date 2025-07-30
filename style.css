@@ -9,6 +9,12 @@
      width: 34rem;
      background-color:forestgreen ;
  }
+
+
+
+ 
+    
+
  input:active {
      transform: scale(0.95);
      border: none;
@@ -16,7 +22,8 @@
 
  input::placeholder {
      padding-left: 10px;
-}
+
+ }
 
  input:focus::placeholder {
      color: transparent;
